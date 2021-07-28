@@ -1,0 +1,22 @@
+.main {
+  border: solid yellowgreen 3px;
+
+  .section-1 {
+    border: solid palevioletred 1px;
+
+    .text {
+      border: solid 2px chocolate;
+    }
+
+    .title {
+      border: solid 1px darkmagenta;
+    }
+
+    .text2 {
+      border: solid 2px darkred;
+    }
+  }
+  .button {
+    border: solid 2px fuchsia;
+  }
+}

@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  border: solid 3px black;
+  .button-home {
+    border: solid 1px red;
+  }
+
+  .menu-link {
+    border: solid 1px green;
+  }
+
+  .social-media {
+    border: solid 1px blue;
+  }
+
+  .copy {
+    border: solid 1px purple;
+  }
+}
