@@ -86,19 +86,23 @@
         font-family: $fonttitle2;
       }
     }
-    .button2 {
+
+    .box_button {
       grid-column: 2/3;
-      border: solid 2px #f26002;
-      background-color: #f26002;
-      color: #fff;
-      border-radius: 22.5px;
-      width: 186px;
-      height: 45px;
-      font-size: 20px;
-      line-height: $line_spacing_button;
-      font-weight: 500;
-      margin: 45px 68px 38px;
-      font-family: $fonttitle2;
+      margin: auto;
+      .button2 {
+        border: solid 2px #f26002;
+        background-color: #f26002;
+        color: #fff;
+        border-radius: 22.5px;
+        width: 186px;
+        height: 45px;
+        font-size: 20px;
+        line-height: $line_spacing_button;
+        font-weight: 500;
+        margin: 45px 68px 38px;
+        font-family: $fonttitle2;
+      }
     }
   }
 }
