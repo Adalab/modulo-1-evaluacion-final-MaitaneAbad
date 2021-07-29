@@ -7,13 +7,23 @@
   height: 670px;
   background-position-x: center;
   justify-content: center;
+  align-items: center;
+  @media (min-width: 768px) {
+    justify-content: end;
+  }
   .box-title {
     .title {
+      margin: 10px 15px;
       font-size: 42px;
       font-weight: bold;
       color: #fff;
       text-transform: uppercase;
       line-height: $line_spacing_title;
+      width: 13ch;
+      @media (min-width: 768px) {
+        font-size: 80px;
+        line-height: 106px;
+      }
     }
   }
   .subtitle {
@@ -49,6 +59,9 @@
       width: 45px;
       height: 45px;
       border-radius: 22.5px;
+      @media (min-width: 768px) {
+        margin-bottom: 40px;
+      }
     }
   }
 }
