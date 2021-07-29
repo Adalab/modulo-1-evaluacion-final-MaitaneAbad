@@ -92,10 +92,10 @@
       }
       .title2 {
         font-weight: bold;
-        margin: 45px 68px 0;
+        margin: 45px px 0;
       }
       .text3 {
-        margin: auto;
+        margin: 0 30px;
         font-family: $fonttitle2;
       }
     }
@@ -116,7 +116,7 @@
         margin: 45px 68px 38px;
         font-family: $fonttitle2;
         @media (min-width: 768px) {
-          margin: 30px 0 60px 0;
+          margin: 60px 0 18px 0;
         }
       }
     }
