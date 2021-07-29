@@ -24,6 +24,22 @@
       .home {
         width: 20.6px;
         height: 24px;
+        &:hover {
+          animation-duration: 3s;
+          animation-name: intro;
+          animation-iteration-count: 1;
+          @keyframes intro {
+            from {
+              transform: scale(5) rotate(-360deg);
+              opacity: 0;
+            }
+
+            to {
+              transform: scale(1);
+              opacity: 1;
+            }
+          }
+        }
       }
     }
   }
