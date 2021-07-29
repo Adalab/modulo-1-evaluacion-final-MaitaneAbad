@@ -47,6 +47,10 @@
       line-height: $line_spacing_button;
       font-weight: 500;
       margin: 30px 0 45px 0;
+      &:hover {
+        color: rgb(247, 202, 4);
+        transition: color ease 1s;
+      }
     }
   }
   .section-2 {
@@ -62,6 +66,11 @@
       line-height: $line_spacing_main;
       text-transform: capitalize;
       margin: 30px 15px 0;
+      &:hover {
+        text-decoration: underline;
+        transform: scale(1.2);
+        transition: text-decoration ease 1s, transform ease 1s;
+      }
     }
 
     .article1 {
