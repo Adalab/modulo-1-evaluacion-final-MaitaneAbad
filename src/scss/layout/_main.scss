@@ -59,6 +59,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     text-align: center;
+
     .title {
       grid-column: 1/4;
       font-weight: bold;
@@ -75,8 +76,7 @@
     }
 
     .article1 {
-      grid-column: 1/4;
-
+      grid-column: 2/3;
       font-size: 18px;
       line-height: $line_spacing_main;
       @media (min-width: 768px) {
@@ -117,6 +117,45 @@
         font-family: $fonttitle2;
         @media (min-width: 768px) {
           margin: 30px 0 60px 0;
+        }
+      }
+    }
+  }
+  .button {
+    line-height: 0;
+    text-align: center;
+    margin: auto;
+    grid-column: 2/3;
+    .button-home {
+      background-color: #fff;
+      border-radius: 22.5px;
+      width: 45px;
+      height: 45px;
+      transform: translateY(50%);
+      @media (min-width: 768px) {
+      }
+
+      .home {
+        /*porque narices se me va la animacion para arriba*/
+        width: 20.6px;
+        height: 24px;
+        transform: translateY(50%);
+        &:hover {
+          animation-duration: 3s;
+          animation-name: intro;
+          animation-iteration-count: 1;
+          @keyframes intro {
+            from {
+              /*transform: scale(5) rotate(-360deg);*/
+              opacity: 0;
+              transform: translateY(100%);
+            }
+
+            to {
+              transform: scale(1);
+              opacity: 1;
+            }
+          }
         }
       }
     }

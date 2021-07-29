@@ -8,45 +8,16 @@
   color: #fff;
   line-height: $line_spacing_main;
   text-transform: uppercase;
-  padding: 0 15px 0 15px;
-  .button {
-    line-height: 0;
-    .button-home {
-      display: flex;
-      background-color: #fff;
-      border-radius: 22.5px;
-      width: 45px;
-      height: 45px;
-      transform: translateY(-50%);
-      justify-content: center;
-      align-items: center;
-
-      .home {
-        width: 20.6px;
-        height: 24px;
-        &:hover {
-          animation-duration: 3s;
-          animation-name: intro;
-          animation-iteration-count: 1;
-          @keyframes intro {
-            from {
-              transform: scale(5) rotate(-360deg);
-              opacity: 0;
-            }
-
-            to {
-              transform: scale(1);
-              opacity: 1;
-            }
-          }
-        }
-      }
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: flex-end;
+    &.menu-link {
+      margin: 0;
     }
   }
 
   .menu-link {
-    margin: 37px 108px 15px;
-    padding: 0 37px;
+    margin: 60px 0 15px;
   }
 
   .social-media {
@@ -58,7 +29,6 @@
     font-size: 14px;
 
     .foot {
-      width: 290px;
       margin-bottom: 45px;
     }
   }
