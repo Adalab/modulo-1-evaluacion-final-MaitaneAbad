@@ -79,6 +79,7 @@
       grid-column: 2/3;
       font-size: 18px;
       line-height: $line_spacing_main;
+      margin-top: 35px;
       @media (min-width: 768px) {
         &.a {
           grid-column: 1/2;
