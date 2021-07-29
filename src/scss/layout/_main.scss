@@ -1,22 +1,52 @@
 .main {
-  border: solid yellowgreen 3px;
+  margin-left: 15px;
+  text-align: start;
+  .section {
+    display: flex;
+    flex-direction: column;
 
-  .section-1 {
-    border: solid palevioletred 1px;
+    .section-1 {
+      .text {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        color: #8ccbea;
+        font-size: 14px;
+        height: 30px;
+      }
 
-    .text {
-      border: solid 2px chocolate;
+      .title {
+        display: flex;
+        align-items: center;
+
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: capitalize;
+        margin-right: 15px;
+        height: 60px;
+      }
+
+      .text2 {
+        color: #4a4a4a;
+        margin: 15px 15px 0 0;
+        font-size: 18px;
+        line-height: $line_spacing_main;
+      }
     }
-
-    .title {
-      border: solid 1px darkmagenta;
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      border: solid 2px #f26002;
+      color: #f26002;
+      border-radius: 22.5px;
+      width: 76px;
+      height: 45px;
+      font-size: 20px;
+      line-height: $line_spacing_button;
+      font-weight: 500;
+      margin: 30px 0 45px 0;
     }
-
-    .text2 {
-      border: solid 2px darkred;
-    }
-  }
-  .button {
-    border: solid 2px fuchsia;
   }
 }
