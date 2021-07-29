@@ -66,6 +66,7 @@
       line-height: $line_spacing_main;
       text-transform: capitalize;
       margin: 30px 15px 0;
+
       &:hover {
         text-decoration: underline;
         transform: scale(1.2);
@@ -75,14 +76,26 @@
 
     .article1 {
       grid-column: 1/4;
+
       font-size: 18px;
       line-height: $line_spacing_main;
+      @media (min-width: 768px) {
+        &.a {
+          grid-column: 1/2;
+        }
+        &.b {
+          grid-column: 2/3;
+        }
+        &.c {
+          grid-column: 3/4;
+        }
+      }
       .title2 {
         font-weight: bold;
         margin: 45px 68px 0;
       }
       .text3 {
-        margin: 0 70px;
+        margin: auto;
         font-family: $fonttitle2;
       }
     }
@@ -102,6 +115,9 @@
         font-weight: 500;
         margin: 45px 68px 38px;
         font-family: $fonttitle2;
+        @media (min-width: 768px) {
+          margin: 30px 0 60px 0;
+        }
       }
     }
   }
