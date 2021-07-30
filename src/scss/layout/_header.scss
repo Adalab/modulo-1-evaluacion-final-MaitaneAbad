@@ -12,6 +12,7 @@
     justify-content: end;
     height: 780px;
   }
+
   .box-title {
     .title {
       margin: 10px 15px;
@@ -24,6 +25,10 @@
       @media (min-width: 768px) {
         font-size: 80px;
         line-height: 106px;
+      }
+      @media (min-width: 1200px) {
+        font-size: 100px;
+        line-height: 132px;
       }
     }
   }
@@ -54,7 +59,9 @@
     display: flex;
     justify-content: center;
     margin-top: 45px;
-
+    @media (min-width: 1200px) {
+      margin-top: 20px;
+    }
     .button {
       display: flex;
       justify-content: center;
@@ -65,6 +72,9 @@
       border-radius: 22.5px;
       @media (min-width: 768px) {
         margin-bottom: 40px;
+      }
+      @media (min-width: 1200px) {
+        margin-bottom: 10px;
       }
     }
   }
