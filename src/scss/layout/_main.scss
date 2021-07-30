@@ -20,31 +20,31 @@
         font-size: 14px;
         height: 30px;
       }
-    }
 
-    .title {
-      display: flex;
-      align-items: center;
-      font-size: 24px;
-      font-weight: bold;
-      text-transform: capitalize;
-      height: 60px;
-      @media (min-width: 768px) {
-        font-size: 26px;
+      .title {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: capitalize;
+        height: 60px;
+        @media (min-width: 768px) {
+          font-size: 26px;
+        }
+        @media (min-width: 1200px) {
+          font-size: 32px;
+          line-height: 45px;
+        }
       }
-      @media (min-width: 1200px) {
-        font-size: 32px;
-        line-height: 45px;
-      }
-    }
 
-    .text2 {
-      color: #4a4a4a;
-      margin-top: 15px;
-      font-size: 18px;
-      line-height: $line_spacing_main;
-      @media (min-width: 768px) {
-        font-size: 20px;
+      .text2 {
+        color: #4a4a4a;
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: $line_spacing_main;
+        @media (min-width: 768px) {
+          font-size: 20px;
+        }
       }
     }
   }
