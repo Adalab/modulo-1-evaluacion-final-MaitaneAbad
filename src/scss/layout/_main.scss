@@ -80,11 +80,14 @@
     line-height: $line_spacing_main;
     text-transform: capitalize;
     margin: 30px 15px 45px;
+    @media (min-width: 768px) {
+      font-size: 26px;
+    }
 
     &:hover {
       text-decoration: underline;
-      transform: scale(1.2);
-      transition: text-decoration ease 1s, transform ease 1s;
+      transform: scale(1.5);
+      transition: text-decoration ease 2s, transform ease 1s;
     }
   }
 
@@ -107,10 +110,17 @@
     .title2 {
       font-weight: bold;
       margin: 45px px 0;
+      @media (min-width: 768px) {
+        font-size: 24px;
+      }
     }
     .text3 {
       margin: 0 30px;
       font-family: $fonttitle2;
+      @media (min-width: 768px) {
+        font-size: 20px;
+        margin: 0 35px;
+      }
     }
   }
 
@@ -118,7 +128,6 @@
     grid-column: 2/3;
     margin: auto;
     .button2 {
-      border: solid 2px #f26002;
       background-color: #f26002;
       color: #fff;
       border-radius: 22.5px;
@@ -131,11 +140,12 @@
       font-family: $fonttitle2;
       @media (min-width: 768px) {
         margin: 60px 0 30px 0;
+        width: 210px;
       }
     }
   }
 }
-.button {
+.button1 {
   line-height: 0;
   text-align: center;
   margin: auto;
@@ -146,8 +156,6 @@
     width: 45px;
     height: 45px;
     transform: translateY(50%);
-    @media (min-width: 768px) {
-    }
 
     .home {
       /*porque narices se me va la animacion para arriba*/
