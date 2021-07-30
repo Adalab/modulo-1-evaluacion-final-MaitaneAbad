@@ -33,7 +33,7 @@
         }
         @media (min-width: 1200px) {
           font-size: 32px;
-          line-height: 45px;
+          line-height: $line_spacing_button;
         }
       }
 
@@ -53,8 +53,8 @@
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    border: solid 2px #f26002;
-    color: #f26002;
+    border: solid 2px $color_text_button1;
+    color: $color_text_button1;
     border-radius: 22.5px;
     width: 76px;
     height: 45px;
@@ -92,7 +92,7 @@
     }
     @media (min-width: 1200px) {
       font-size: 32px;
-      line-height: 45px;
+      line-height: $line_spacing_button;
     }
 
     &:hover {
@@ -142,8 +142,8 @@
     grid-column: 2/3;
     margin: auto;
     .button2 {
-      background-color: #f26002;
-      color: #fff;
+      background-color: $color_button;
+      color: $color_button_arrow_go;
       border-radius: 22.5px;
       width: 186px;
       height: 45px;
@@ -166,7 +166,7 @@
   margin: auto;
   grid-column: 2/3;
   .button-home {
-    background-color: #fff;
+    background-color: $color_button_arrow_go;
     border-radius: 22.5px;
     width: 45px;
     height: 45px;
