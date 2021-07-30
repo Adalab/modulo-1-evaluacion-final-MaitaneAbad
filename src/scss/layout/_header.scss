@@ -29,6 +29,9 @@
   .subtitle {
     color: #fff;
     margin: 10px 15px;
+    @media (min-width: 768px) {
+      font-size: 24px;
+    }
   }
 
   .hamburguer {

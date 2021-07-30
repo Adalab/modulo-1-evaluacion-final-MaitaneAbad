@@ -4,6 +4,9 @@
     display: flex;
     flex-direction: column;
     margin: 0 15px 0 15px;
+    @media (min-width: 768px) {
+      margin: 0 39px;
+    }
 
     .article {
       .text {
@@ -14,148 +17,157 @@
         font-size: 14px;
         height: 30px;
       }
-
-      .title {
-        display: flex;
-        align-items: center;
-
-        font-size: 24px;
-        font-weight: bold;
-        text-transform: capitalize;
-
-        height: 60px;
-      }
-
-      .text2 {
-        color: #4a4a4a;
-        margin-top: 15px;
-        font-size: 18px;
-        line-height: $line_spacing_main;
-      }
     }
-    .button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-sizing: border-box;
-      border: solid 2px #f26002;
-      color: #f26002;
-      border-radius: 22.5px;
-      width: 76px;
-      height: 45px;
-      font-size: 20px;
-      line-height: $line_spacing_button;
-      font-weight: 500;
-      margin: 30px 0 45px 0;
-      &:hover {
-        color: rgb(247, 202, 4);
-        transition: color ease 1s;
-      }
-    }
-  }
-  .section-2 {
-    background-color: #eff9ff;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    text-align: center;
 
     .title {
-      grid-column: 1/4;
-      font-weight: bold;
+      display: flex;
+      align-items: center;
       font-size: 24px;
-      line-height: $line_spacing_main;
+      font-weight: bold;
       text-transform: capitalize;
-      margin: 30px 15px 45px;
-
-      &:hover {
-        text-decoration: underline;
-        transform: scale(1.2);
-        transition: text-decoration ease 1s, transform ease 1s;
+      height: 60px;
+      @media (min-width: 768px) {
+        font-size: 26px;
       }
     }
 
-    .article1 {
-      grid-column: 2/3;
+    .text2 {
+      color: #4a4a4a;
+      margin-top: 15px;
       font-size: 18px;
       line-height: $line_spacing_main;
-      margin-top: 35px;
       @media (min-width: 768px) {
-        &.a {
-          grid-column: 1/2;
-        }
-        &.b {
-          grid-column: 2/3;
-        }
-        &.c {
-          grid-column: 3/4;
-        }
-      }
-      .title2 {
-        font-weight: bold;
-        margin: 45px px 0;
-      }
-      .text3 {
-        margin: 0 30px;
-        font-family: $fonttitle2;
-      }
-    }
-
-    .box_button {
-      grid-column: 2/3;
-      margin: auto;
-      .button2 {
-        border: solid 2px #f26002;
-        background-color: #f26002;
-        color: #fff;
-        border-radius: 22.5px;
-        width: 186px;
-        height: 45px;
         font-size: 20px;
-        line-height: $line_spacing_button;
-        font-weight: 500;
-        margin: 45px 68px 38px;
-        font-family: $fonttitle2;
-        @media (min-width: 768px) {
-          margin: 60px 0 30px 0;
-        }
       }
     }
   }
   .button {
-    line-height: 0;
-    text-align: center;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: solid 2px #f26002;
+    color: #f26002;
+    border-radius: 22.5px;
+    width: 76px;
+    height: 45px;
+    font-size: 20px;
+    line-height: $line_spacing_button;
+    font-weight: 500;
+    margin: 30px 0 45px 0;
+    &:hover {
+      color: rgb(247, 202, 4);
+      transition: color ease 1s;
+    }
+    @media (min-width: 768px) {
+      width: 91px;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.section-2 {
+  background-color: #eff9ff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  text-align: center;
+
+  .title {
+    grid-column: 1/4;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: $line_spacing_main;
+    text-transform: capitalize;
+    margin: 30px 15px 45px;
+
+    &:hover {
+      text-decoration: underline;
+      transform: scale(1.2);
+      transition: text-decoration ease 1s, transform ease 1s;
+    }
+  }
+
+  .article1 {
     grid-column: 2/3;
-    .button-home {
-      background-color: #fff;
-      border-radius: 22.5px;
-      width: 45px;
-      height: 45px;
-      transform: translateY(50%);
-      @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: $line_spacing_main;
+    margin-top: 35px;
+    @media (min-width: 768px) {
+      &.a {
+        grid-column: 1/2;
       }
+      &.b {
+        grid-column: 2/3;
+      }
+      &.c {
+        grid-column: 3/4;
+      }
+    }
+    .title2 {
+      font-weight: bold;
+      margin: 45px px 0;
+    }
+    .text3 {
+      margin: 0 30px;
+      font-family: $fonttitle2;
+    }
+  }
 
-      .home {
-        /*porque narices se me va la animacion para arriba*/
-        width: 20.6px;
-        height: 24px;
-        transform: translateY(50%);
-        &:hover {
-          animation-duration: 3s;
-          animation-name: intro;
-          animation-iteration-count: 1;
-          @keyframes intro {
-            from {
-              /*transform: scale(5) rotate(-360deg);*/
-              opacity: 0;
-              transform: translateY(100%);
-            }
+  .box_button {
+    grid-column: 2/3;
+    margin: auto;
+    .button2 {
+      border: solid 2px #f26002;
+      background-color: #f26002;
+      color: #fff;
+      border-radius: 22.5px;
+      width: 186px;
+      height: 45px;
+      font-size: 20px;
+      line-height: $line_spacing_button;
+      font-weight: 500;
+      margin: 45px 68px 38px;
+      font-family: $fonttitle2;
+      @media (min-width: 768px) {
+        margin: 60px 0 30px 0;
+      }
+    }
+  }
+}
+.button {
+  line-height: 0;
+  text-align: center;
+  margin: auto;
+  grid-column: 2/3;
+  .button-home {
+    background-color: #fff;
+    border-radius: 22.5px;
+    width: 45px;
+    height: 45px;
+    transform: translateY(50%);
+    @media (min-width: 768px) {
+    }
 
-            to {
-              transform: scale(1);
-              opacity: 1;
-            }
+    .home {
+      /*porque narices se me va la animacion para arriba*/
+      width: 20.6px;
+      height: 24px;
+      transform: translateY(50%);
+      &:hover {
+        animation-duration: 3s;
+        animation-name: intro;
+        animation-iteration-count: 1;
+        @keyframes intro {
+          from {
+            /*transform: scale(5) rotate(-360deg);*/
+            opacity: 0;
+            transform: translateY(100%);
+          }
+
+          to {
+            transform: scale(1);
+            opacity: 1;
           }
         }
       }
