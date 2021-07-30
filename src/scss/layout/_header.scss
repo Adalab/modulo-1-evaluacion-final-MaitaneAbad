@@ -3,13 +3,12 @@
   flex-direction: column;
   background-image: url(../images/cover.jpg);
   background-size: cover;
-  height: 670px;
+  height: 100vh;
   background-position-x: center;
   justify-content: center;
   align-items: center;
   @media (min-width: 768px) {
     justify-content: flex-end;
-    height: 780px;
   }
 
   .box-title {
