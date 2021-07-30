@@ -59,8 +59,6 @@
     width: 76px;
     height: 45px;
     font-size: 20px;
-    line-height: $line_spacing_button;
-    font-weight: 500;
     margin: 30px 0 45px 0;
     &:hover {
       color: rgb(247, 202, 4);
@@ -80,7 +78,6 @@
   background-color: #eff9ff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
   text-align: center;
 
   .title {
@@ -123,7 +120,7 @@
     }
     .title2 {
       font-weight: bold;
-      margin: 45px px 0;
+      margin: 14px;
       @media (min-width: 768px) {
         font-size: 24px;
       }
@@ -166,8 +163,6 @@
   }
 }
 .button1 {
-  line-height: 0;
-  text-align: center;
   margin: auto;
   grid-column: 2/3;
   .button-home {
@@ -178,7 +173,6 @@
     transform: translateY(50%);
 
     .home {
-      /*porque narices se me va la animacion para arriba*/
       width: 20.6px;
       height: 24px;
       transform: translateY(50%);
@@ -188,7 +182,6 @@
         animation-iteration-count: 1;
         @keyframes intro {
           from {
-            /*transform: scale(5) rotate(-360deg);*/
             opacity: 0;
             transform: translateY(100%);
           }
