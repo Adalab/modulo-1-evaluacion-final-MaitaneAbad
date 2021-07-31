@@ -1,10 +1,9 @@
 <h1 align="center">Hi 👋, I'm Maitane Abad</h1>
 <h3 align="center">Final evaluation of module 1</h3>
+
+
 - 👨‍💻 Steps to follow to install this repository
-(Clone the repository on your computer Install the local dependencies by running the command in the terminal: npm install Steps to start the project: Once we have installed the dependencies, we are going to start the project. The project must be started every time you start programming. To do this, run the command npm start This command: Opens a window in the browser and displays the website)
-
-
-
+Clone the repository on your computer Install the local dependencies by running the command in the terminal: npm install Steps to start the project: Once we have installed the dependencies, we are going to start the project. The project must be started every time you start programming. To do this, run the command npm start This command: Opens a window in the browser and displays the website
 
 - 🌱 I’m currently learning **HTML and SCSS**
 
